@@ -44,4 +44,15 @@ function resizeMenu() {
     }
 }
 
+let theme = "dark";
+function changeTheme() {
+    if(theme==="light") {
+        theme="dark";
+        document.getElementById("css-colors").href = "css/web-colors-dark.css"
+    } else {
+        theme="light";
+        document.getElementById("css-colors").href = "css/web-colors-light.css"
+    }
+}
+
 window.onresize = onResize;
