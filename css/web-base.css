@@ -1,0 +1,87 @@
+body {
+    font-family: MPLUS1p, serif;
+    background: var(--background);
+    color: var(--foreground);
+}
+
+@font-face {
+    font-family: MPLUS1p;
+    src: url("../fonts/MPLUS1p/MPLUS1p-Regular.ttf");
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--highlight);
+}
+
+#menu {
+    position: absolute;
+    top: 1rem; left: 0; right: 0;
+    background: var(--background5);
+    height: 4rem;
+    border-radius: 1rem;
+    user-select: none;
+    box-shadow: 0 0 0.8rem 0 var(--shadow3);
+}
+
+#menu h1 {
+    width: fit-content;
+    font-size: 1.75rem;
+    padding: 0.75rem 0 0 1rem;
+    margin: 0;
+}
+
+#menu h1 a {
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+#menu h1 a:hover {
+    cursor: pointer;
+    color: var(--foreground2);
+}
+
+#menu .links {
+    position: absolute;
+    right: 0.25rem; top: 0.75rem;
+}
+
+#menu .links a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 0.1rem 1rem 0.3rem 1rem !important;
+    border-radius: 0.5rem;
+    color: var(--foreground);
+    transition: all 0.5s ease;
+}
+
+#menu .links a:hover {
+    color: var(--highlight);
+    cursor: pointer;
+    background: var(--background4);
+}
+
+a.button {
+    margin: 0 0.5rem 0 0.5rem;
+    padding: 1rem;
+    background: var(--highlight);
+    color: var(--background5) !important;
+    transition: all 0.5s ease;
+}
+
+a.button:hover {
+    background: var(--accent) !important;
+    color: var(--shadow4) !important;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.flex {
+    display: flex;
+}
+
+.glass {
+    background: var(--background6) !important;
+    backdrop-filter: blur(10px) !important;
+}
